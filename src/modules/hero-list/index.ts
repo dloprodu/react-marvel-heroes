@@ -1,1 +1,4 @@
-export * from './pages';
+export {
+  HeroListPage as default,
+  HeroPage
+} from './pages';

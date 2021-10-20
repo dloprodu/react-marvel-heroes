@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
 export class HeroPage extends Component {
-  render = () => `
+  render = () => (
     <h1>
       Hero Page
     </h1>
-  `
+  )
 }

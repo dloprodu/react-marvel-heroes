@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
-export class HeroListPage extends Component {
+export class ComicListPage extends Component {
   render = () => (
     <h1>
-      Hero List Page
+      Comic List Page
     </h1>
   )
 }
