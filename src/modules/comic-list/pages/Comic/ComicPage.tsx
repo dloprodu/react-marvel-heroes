@@ -1,9 +1,14 @@
 import { Component } from 'react';
 
+import Box from '@mui/material/Box';
+
 export class ComicPage extends Component {
-  render = () => (
-    <h1>
-      Comic Page
-    </h1>
-  )
+
+  render() {
+    return (
+      <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+        Comic Detail
+      </Box>
+    );
+  }
 }

@@ -27,7 +27,11 @@ export default class App extends Component<Props> {
 
   render = () => (
     <Router>
-      <Container maxWidth="md">
+      <Container maxWidth="md" sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%'
+      }}>
         <AppBar position="static">
           <Toolbar variant="dense">
             <Typography variant="h6" color="inherit" component="div">
@@ -48,7 +52,12 @@ export default class App extends Component<Props> {
           </Toolbar>
         </AppBar>
 
-        <Box>
+        <Box sx={{
+          position: 'relative',
+          flexGrow: 1,
+          overflow: 'hidden',
+          background: 'whitesmoke'
+        }}>
           <Suspense fallback={<div>Loading...</div>}>
             <Switch>
               <Route exact path="/" component={HeroListPage}/>
